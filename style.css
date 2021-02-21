@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
 body {
-    text-align: center;
-    padding: 150px;
-    font-family: 'Roboto', sans-serif;
     background-color: rgb(32, 30, 30);
+    font-family: 'Roboto', sans-serif;
+    padding: 150px;
+    text-align: center;
 }
 
 article {
-    display: block;
     color: rgb(208, 215, 221);
+    display: block;
+    margin: 0 auto;
     text-align: left;
     width: 650px;
-    margin: 0 auto;
 }
 
 h1 {
@@ -19,10 +19,10 @@ h1 {
 }
 
 h1.errcode {
+    color: rgb(204, 204, 42);
+    font-family: 'Roboto Mono', monospace;
     font-size: 50px;
     padding-bottom: 0px;
-    font-family: 'Roboto Mono', monospace;
-    color: rgb(204, 204, 42);
 }
 
 p {
@@ -30,23 +30,25 @@ p {
 }
 
 p.errmsg {
-    font-size: 25px;
-    font-family: 'Roboto Mono', monospace;
     color: rgb(204, 204, 42);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
 }
 
 a {
-    font-size: 25px;
     color: seagreen;
+    font-size: 25px;
     text-align: center;
 }
 
 a.redir {
-    font-size: 20px;
     color: rgb(60, 58, 58);
+    font-size: 20px;
     text-align: center;
 }
 
-code {
+a.source {
+    color: rgb(60, 58, 58);
+    font-family: 'Roboto Mono', monospace;
     font-size: 15px;
 }
