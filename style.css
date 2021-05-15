@@ -1,41 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
 body {
+    background-attachment: fixed;
+    background-image: url('src/bg/sydney.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(32, 30, 30);
     font-family: 'Roboto', sans-serif;
-    padding: 150px;
-    text-align: center;
+    padding: 100px;
 }
 
 article {
-    color: rgb(208, 215, 221);
-    display: block;
-    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(32, 32, 30, 0.2);
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    margin: 0 5 0 0;
     text-align: left;
-    width: 650px;
+    width: 55%;
+    position: static;
+    max-height: 250px;
 }
 
 h1 {
-    font-size: 50px;
+    display: inline;
+    font-size: 750%;
+    margin-top: 0%;
+    margin-bottom: 0.05%;
+    vertical-align: middle;
 }
 
 h1.errcode {
     color: rgb(204, 204, 42);
     font-family: 'Roboto Mono', monospace;
-    font-size: 50px;
-    padding-bottom: 0px;
+    font-size: 750%;
+    margin-top: 0%;
+    margin-bottom: 0.05%;
+    display: inline;
+    vertical-align: middle;
+}
+
+img.icon {
+    display: inline-block;
+    height: 64px;
+    width: 64px;
+    margin: 0% 0.025% 0% 0%;
+    z-index: 1;
+}
+
+img:hover+.info {
+    animation-name: showusername;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    padding-bottom: 50px;
+}
+
+.info {
+    display: none;
+    padding-left: 0px;
+    width: 0.4%;
+    z-index: 2;
 }
 
 p {
-    font-size: 20px;
+    font-size: 200%;
+    display: inline-block;
+    margin: 0% 0% 0% 0%;
 }
 
 p.errmsg {
     color: rgb(204, 204, 42);
     font-family: 'Roboto Mono', monospace;
-    font-size: 25px;
+    font-size: 450%;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0% 0% 0% 0%;
 }
 
-a {
+p.username {
+    font-family: 'Roboto Mono', monospace;
+    position: relative;
+    width: 20px;
+    bottom: 20px;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    width: 0px;
+    white-space: nowrap;
+    z-index: 3;
+    font-size: 200%;
+    display: inline;
+}
+
+a.t {
     color: seagreen;
     font-size: 25px;
     text-align: center;
@@ -51,4 +110,13 @@ a.source {
     color: rgb(60, 58, 58);
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
+}
+
+@keyframes showusername {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 32%;
+    }
 }

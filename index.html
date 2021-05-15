@@ -4,22 +4,48 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/png" href="assets/agentisnotreal.png">
+    <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal</title>
 </head>
 
 <body>
     <article>
-        <h1>Hi there!</h1>
-        <p>Welcome to my space on the internet. If you're wondering, there's nothing else interesting here, unless you like <a href="menu.html" style="font-size: 20px;">this</a></p>
-        <br>
-        <img style="margin-left:auto; margin-right: auto; display:block;" src="https://github-readme-stats.vercel.app/api?username=agentisnotreal&count_private=true&show_icons=true&include_all_commits=true&hide=issues&hide_title=true&theme=tokyonight">
-        <p style="font-size: 64px;text-align: center; color:white;">
-            <a href="https://github.com/agentisnotreal"><img src="assets/GitHub-Mark-Light-64px.png" alt="GitHub" width="48px" height="48px"></a> •
-            <a href="https://twitter.com/agentisnotreal"><img src="assets/Twitter_Logo_WhiteOnImage.png" alt="Twitter" width="48px" height="48px" style="transform: scale(1.5);"></a>
-        </p>
-        <p style="text-align: center;"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Interested in the source? Click here</a></p>
+        <p>Howdy! I'm</p><br>
+        <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 10%; width: 10%;vertical-align: middle;">
+        <h1 style="display: inline; vertical-align: middle;">agentisnotreal</h1>
+
+        <div>
+            <a href="https://github.com/agentisnotreal" title="GitHub" style="text-decoration: none; color: rgb(32, 30, 30);">
+                <img class="icon" src="src/svg/github.svg" alt="GitHub Logo" style="padding-left: 0.01%;">
+                <div class="info">
+                    <p class="username">/agentisnotreal</p>
+                </div>
+            </a>
+
+            <a href="https://twitter.com/agentisnotreal" title="Twitter" style="text-decoration: none; color: rgb(32, 30, 30);">
+                <img class="icon" src="src/svg/twitter.svg" alt="Twitter Logo">
+                <div class="info">
+                    <p class="username">@agentisnotreal</p>
+                </div>
+            </a>
+
+            <img class="icon" src="src/svg/discord.svg" alt="Discord Logo" onclick="copyTag()" title="Discord (click to copy)">
+            <div class="info">
+                <p class="username" id="tag">agentisnotreal#1090</p>
+            </div>
+        </div>
     </article>
 </body>
+
+<script>
+    function copyTag() {
+        var r = document.createRange();
+        r.selectNode(document.getElementById("tag"));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(r);
+        document.execCommand('copy');
+        window.getSelection().removeAllRanges();
+    }
+</script>
 
 </html>
