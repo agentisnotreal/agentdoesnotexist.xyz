@@ -11,32 +11,31 @@ body {
 }
 
 article {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0px 10px 10px;
     background-color: rgba(32, 32, 30, 0.2);
     color: rgb(255, 255, 255);
     display: inline-block;
     margin: 0 5 0 0;
     text-align: left;
-    width: 55%;
+    width: 930px;
     position: static;
     max-height: 250px;
 }
 
 h1 {
     display: inline;
-    font-size: 750%;
-    margin-top: 0%;
-    margin-bottom: 0.05%;
+    font-size: 120px;
+    margin-top: 0px;
+    margin-bottom: 10px;
     vertical-align: middle;
 }
 
 h1.errcode {
     color: rgb(204, 204, 42);
     font-family: 'Roboto Mono', monospace;
-    font-size: 750%;
-    margin-top: 0%;
-    margin-bottom: 0.05%;
+    font-size: 120px;
+    margin-top: 0px;
+    margin-bottom: 8px;
     display: inline;
     vertical-align: middle;
 }
@@ -45,7 +44,7 @@ img.icon {
     display: inline-block;
     height: 64px;
     width: 64px;
-    margin: 0% 0.025% 0% 0%;
+    margin: 0px 5px 0px 0px;
     z-index: 1;
 }
 
@@ -61,23 +60,23 @@ img:hover+.info {
 .info {
     display: none;
     padding-left: 0px;
-    width: 0.4%;
+    width: 6.4px;
     z-index: 2;
 }
 
 p {
-    font-size: 200%;
+    font-size: 32px;
     display: inline-block;
-    margin: 0% 0% 0% 0%;
+    margin: 0px 0px 0px 0px;
 }
 
 p.errmsg {
     color: rgb(204, 204, 42);
     font-family: 'Roboto Mono', monospace;
-    font-size: 450%;
+    font-size: 72px;
     vertical-align: middle;
     display: inline-block;
-    margin: 0% 0% 0% 0%;
+    margin: 0px 0px 0px 0px;
 }
 
 p.username {
@@ -90,7 +89,7 @@ p.username {
     width: 0px;
     white-space: nowrap;
     z-index: 3;
-    font-size: 200%;
+    font-size: 32px;
     display: inline;
 }
 
@@ -114,9 +113,9 @@ a.source {
 
 @keyframes showusername {
     from {
-        width: 0%;
+        width: 0px;
     }
     to {
-        width: 32%;
+        width: 300px;
     }
 }
