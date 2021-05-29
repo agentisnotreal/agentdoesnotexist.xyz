@@ -79,6 +79,17 @@ p.errmsg {
     margin: 0px 0px 0px 0px;
 }
 
+p.source {
+    background-color: rgba(32, 32, 30, 0.7);
+    color: rgb(60, 58, 58);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    bottom: 0;
+}
+
 p.username {
     font-family: 'Roboto Mono', monospace;
     position: relative;
