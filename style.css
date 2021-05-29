@@ -114,8 +114,10 @@ a.source {
 @keyframes showusername {
     from {
         width: 0px;
+        opacity: 0;
     }
     to {
         width: 300px;
+        opacity: 1;
     }
 }
