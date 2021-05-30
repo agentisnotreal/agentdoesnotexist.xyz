@@ -1,8 +1,10 @@
 # agentdoesnotexist.xyz
 
-My personal website, open sourcec under the GNU General Public License.
+My personal website, open source under the GNU General Public License.
 
 The rickroll is located in `/menu.html` ([click here](https://agentdoesnotexist.xyz/menu) to go there)
+
+Original site can be found on the [`v1`](https://github.com/agentisnotreal/agentdoesnotexist.xyz/tree/v1) branch
 
 # Acknowledgements
 
