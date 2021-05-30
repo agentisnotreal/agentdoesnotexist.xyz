@@ -1,42 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
 body {
-    background-attachment: fixed;
-    background-image: url('src/bg/sydney.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(32, 30, 30) url('src/bg/sydney.jpg') no-repeat fixed center;
     background-size: cover;
-    background-color: rgb(32, 30, 30);
     font-family: 'Roboto', sans-serif;
     padding: 100px;
 }
 
 article {
-    padding: 10px 0px 10px 10px;
     background-color: rgba(32, 32, 30, 0.2);
     color: rgb(255, 255, 255);
     display: inline-block;
+    max-height: 250px;
     margin: 0 5 0 0;
+    padding: 10px 0px 10px 10px;
+    position: static;
     text-align: left;
     width: 930px;
-    position: static;
-    max-height: 250px;
 }
 
 h1 {
     display: inline;
     font-size: 120px;
-    margin-top: 0px;
-    margin-bottom: 10px;
+    margin: 0px, 0px, 10px;
     vertical-align: middle;
 }
 
 h1.errcode {
     color: rgb(204, 204, 42);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 120px;
-    margin-top: 0px;
-    margin-bottom: 8px;
     display: inline;
+    font-family: 120px 'Roboto Mono', monospace;
+    margin: 0px, 0px, 8px;
     vertical-align: middle;
 }
 
@@ -45,14 +38,10 @@ img.icon {
     height: 64px;
     width: 64px;
     margin: 0px 5px 0px 0px;
-    z-index: 1;
 }
 
 img:hover+.info {
-    animation-name: showusername;
-    animation-duration: 2s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+    animation: showusername 2s ease 0s 1 alternate forwards;
     display: inline-block;
     padding-bottom: 50px;
 }
@@ -64,6 +53,15 @@ img:hover+.info {
     z-index: 2;
 }
 
+.src {
+    background-color: rgba(32, 32, 30, 0.7);
+    bottom: 0;
+    padding: 0px 15px 0px 15px;
+    position: fixed;
+    text-align: center;
+    width: 300px;
+}
+
 p {
     font-size: 32px;
     display: inline-block;
@@ -72,63 +70,45 @@ p {
 
 p.errmsg {
     color: rgb(204, 204, 42);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 72px;
-    vertical-align: middle;
     display: inline-block;
+    font: 72px 'Roboto Mono', monospace;
     margin: 0px 0px 0px 0px;
+    vertical-align: middle;
 }
 
 p.source {
-    background-color: rgba(32, 32, 30, 0.7);
     color: rgb(60, 58, 58);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: fixed;
-    bottom: 0;
+    display: inline-block;
+    white-space: nowrap;
+    font: 16px 'Roboto Mono', monospace;
 }
 
 p.username {
-    font-family: 'Roboto Mono', monospace;
-    position: relative;
-    width: 20px;
-    bottom: 20px;
-    left: 0px;
     color: rgb(255, 255, 255);
-    width: 0px;
-    white-space: nowrap;
-    z-index: 3;
-    font-size: 32px;
+    bottom: 20px;
     display: inline;
-}
-
-a.t {
-    color: seagreen;
-    font-size: 25px;
-    text-align: center;
-}
-
-a.redir {
-    color: rgb(60, 58, 58);
-    font-size: 20px;
-    text-align: center;
+    font: 32px 'Roboto Mono', monospace;
+    left: 0px;
+    position: relative;
+    white-space: nowrap;
+    width: 20px;
+    z-index: 3;
 }
 
 a.source {
-    color: rgb(60, 58, 58);
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    color: rgb(187, 223, 197);
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 @keyframes showusername {
     from {
-        width: 0px;
         opacity: 0;
+        width: 0px;
     }
     to {
-        width: 300px;
         opacity: 1;
+        width: 300px;
     }
 }
