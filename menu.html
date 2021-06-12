@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal | 200</title>
+    <script src="src/js/getLastCommit.js"></script>
 </head>
 
-<body style="background-image: url('src/bg/melbourne.jpg');">
+<body style="background-image: url('src/bg/melbourne.jpg');" onload="setDisplayedCommit('commit');">
     <article style="background-color: rgba(32, 32, 30, 0.2);">
         <h1 class="errcode">200</h1>
         <p class="errmsg">YOU'RE AN IDIOT</p><br>
@@ -19,7 +20,9 @@
     </article>
     <div class="src">
         <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Source Code</a> |
-            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a></p>
+            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
+            <a class="source" id="commit">git-UNKNOWN</a>
+        </p>
     </div>
 </body>
 
