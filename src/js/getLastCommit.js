@@ -12,8 +12,8 @@ async function getLastCommit() {
                 if (!body) {
                     return reject(new Error("Failed to receive commit data from GitHub! Error: No body"));
                 } else {
-                    data.sha = body.parents[0].sha;
-                    data.url = body.parents[0].html_url;
+                    data.sha = body.sha;
+                    data.url = body.url;
                     return resolve(data);
                 }
             }).catch(function(e) {
