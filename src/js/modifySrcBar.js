@@ -36,9 +36,3 @@ async function setDisplayedCommit(element) {
         a.innerHTML = "git-UNKNOWN";
     }
 }
-
-// Set page source
-function getSource(element) {
-    document.getElementById(element).href = "https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/" + location.href.split("/").slice(-1)[0];
-    return;
-}
