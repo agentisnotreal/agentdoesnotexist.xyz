@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal</title>
-    <script src="src/js/getLastCommit.js"></script>
+    <script src="src/js/modifySrcBar.js"></script>
     <script src="src/js/copyTag.js"></script>
 </head>
 
-<body onload="setDisplayedCommit('commit');">
+<body onload="setDisplayedCommit('commit'); getSource('source');">
     <article>
         <p>Howdy! I'm</p><br>
         <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%;vertical-align: middle; display: inline;">
@@ -41,7 +41,7 @@
         </div>
     </article>
     <div class="src">
-        <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Source Code</a> |
+        <p class="source"><a class="source" id="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Source Code</a> |
             <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
             <a class="source" id="commit">git-UNKNOWN</a>
         </p>

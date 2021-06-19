@@ -1,3 +1,4 @@
+// Retrieve last commit from GitHub
 async function getLastCommit() {
     var data = {
         sha: "",
@@ -22,6 +23,7 @@ async function getLastCommit() {
     })
 }
 
+// Display Commit ID
 async function setDisplayedCommit(element) {
     var a = document.getElementById(element);
     try {
@@ -33,4 +35,10 @@ async function setDisplayedCommit(element) {
         console.error(e);
         a.innerHTML = "git-UNKNOWN";
     }
+}
+
+// Set page source
+function getSource(element) {
+    document.getElementById(element).href = "https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/" + location.href.split("/").slice(-1)[0];
+    return;
 }
