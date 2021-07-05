@@ -2,7 +2,7 @@
 
 My personal website, open source under the GNU General Public License.
 
-The rickroll is located in [`/menu.html`](https://agentdoesnotexist.xyz/menu)
+The rickroll is located in [`/amogus.html`](https://agentdoesnotexist.xyz/amogus)
 
 Original site can be found on the [`v1`](https://github.com/agentisnotreal/agentdoesnotexist.xyz/tree/v1) branch.
 
