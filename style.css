@@ -6,7 +6,7 @@ body {
     padding: 100px;
 }
 
-article {
+.about {
     background-color: rgba(32, 32, 30, 0.2);
     color: rgb(255, 255, 255);
     display: inline-block;
@@ -40,17 +40,12 @@ img.icon {
     margin: 0px 5px 0px 0px;
 }
 
-img:hover+.info {
-    animation: showusername 2s ease 0s 1 alternate forwards;
-    display: inline-block;
-    padding-bottom: 50px;
-}
-
 .info {
-    display: none;
     padding-left: 0px;
-    width: 6.4px;
-    z-index: 2;
+    padding-right: 5px;
+    display: inline-flex;
+    height: 64px;
+    width: 64px;
 }
 
 .src {
@@ -83,18 +78,6 @@ p.source {
     font: 16px 'Roboto Mono', monospace;
 }
 
-p.username {
-    color: rgb(255, 255, 255);
-    bottom: 20px;
-    display: inline;
-    font: 32px 'Roboto Mono', monospace;
-    left: 0px;
-    position: relative;
-    white-space: nowrap;
-    width: 20px;
-    z-index: 3;
-}
-
 a.source {
     color: rgb(187, 223, 197);
     display: inline-block;
@@ -102,13 +85,42 @@ a.source {
     font-size: inherit;
 }
 
+a.username {
+    color: rgb(255, 255, 255);
+    bottom: 20px;
+    display: none;
+    font: 32px 'Roboto Mono', monospace;
+    margin-top: 25px;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    width: 20px;
+    z-index: 3;
+}
+
+.info:hover a.username {
+    animation: showusername 2s ease 0s 1 alternate forwards;
+    display: inline-flex;
+}
+.info:hover {
+    animation: extenddiv 2s ease 0s 1 alternate forwards;
+}
+
 @keyframes showusername {
     from {
         opacity: 0;
-        width: 0px;
     }
     to {
         opacity: 1;
         width: 300px;
+    }
+}
+
+@keyframes extenddiv {
+    from {
+        width: 64px;
+    }
+    to {
+        width: 375px;
     }
 }

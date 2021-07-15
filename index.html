@@ -14,41 +14,49 @@
 </head>
 
 <body onload="setDisplayedCommit('commit');">
-    <article>
+
+    <div class="about">
         <p>Howdy! I'm</p><br>
-        <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%;vertical-align: middle; display: inline;">
+        <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal"
+            style="height: 12%; width: 12%;vertical-align: middle; display: inline;">
         <h1 style="display: inline; vertical-align: middle;">agentisnotreal</h1>
 
+        <!-- Account Links -->
         <div>
-            <a href="https://github.com/agentisnotreal" title="GitHub" style="text-decoration: none; color: rgb(32, 30, 30);">
-                <img class="icon" src="src/svg/github.svg" alt="GitHub Logo" style="padding-left: 0.01%;">
-                <div class="info">
-                    <p class="username">/agentisnotreal</p>
-                </div>
-            </a>
-
-            <a href="https://twitter.com/agentisnotreal" title="Twitter" style="text-decoration: none; color: rgb(32, 30, 30);">
-                <img class="icon" src="src/svg/twitter.svg" alt="Twitter Logo">
-                <div class="info">
-                    <p class="username">@agentisnotreal</p>
-                </div>
-            </a>
-
-            <img class="icon" src="src/svg/discord.svg" alt="Discord Logo" onclick="copyTag('tag')" title="Discord (click to copy)">
+            <!-- GitHub -->
             <div class="info">
-                <p class="username" id="tag">agentisnotreal#1090</p>
+                <img class="icon" src="src/svg/github.svg" alt="GitHub: agentisnotreal">
+                <a class="username" href="https://github.com/agentisnotreal">/agentisnotreal</a>
+            </div>
+
+            <!-- Twitter -->
+            <div class="info">
+                <img class="icon" src="src/svg/twitter.svg" alt="Twitter: @agentisnotreal">
+                <a class="username" href="https://twitter.com/agentisnotreal">@agentisnotreal</a>
+            </div>
+
+            <!-- Discord -->
+            <div class="info" onclick="copyTag('tag')">
+                <img class="icon" src="src/svg/discord.svg" alt="Discord: agentisnotreal#1090"
+                    title="Discord (click to copy)">
+                <a class="username" id="tag">agentisnotreal#1090</a>
             </div>
         </div>
-    </article>
+
+    </div>
+
+    <!-- Source Bar -->
     <div class="src">
-        <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/index.html">Source Code</a> |
-            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
+        <p class="source"><a class="source"
+                href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/index.html">Source Code</a>
+            |
+            <a class="source"
+                href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a>
+            |
             <a class="source" id="commit">git-UNKNOWN</a>
         </p>
     </div>
-</body>
 
-<script>
-</script>
+</body>
 
 </html>
