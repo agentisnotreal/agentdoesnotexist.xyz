@@ -45,7 +45,8 @@ img.icon {
     padding-right: 5px;
     display: inline-flex;
     height: 64px;
-    width: 64px;
+    width: 70px;
+    transition: width 1.5s ease-in-out;
 }
 
 .src {
@@ -87,40 +88,25 @@ a.source {
 
 a.username {
     color: rgb(255, 255, 255);
-    bottom: 20px;
-    display: none;
+    display: inline-flex;
     font: 32px 'Roboto Mono', monospace;
-    margin-top: 25px;
     position: relative;
+    padding: 7px 0;
     text-decoration: none;
     white-space: nowrap;
     width: 20px;
+    height: 50px;
     z-index: 3;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, width 1.5s ease-in-out;
 }
 
 .info:hover a.username {
-    animation: showusername 2s ease 0s 1 alternate forwards;
-    display: inline-flex;
+    width: 300px;
+    opacity: 1;
+    transition: opacity 2s ease-in-out, width 1.5s ease-in-out;
 }
 .info:hover {
-    animation: extenddiv 2s ease 0s 1 alternate forwards;
-}
-
-@keyframes showusername {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-        width: 300px;
-    }
-}
-
-@keyframes extenddiv {
-    from {
-        width: 64px;
-    }
-    to {
-        width: 375px;
-    }
+    width: 375px;
+    transition: width 1.5s ease-in-out;
 }
