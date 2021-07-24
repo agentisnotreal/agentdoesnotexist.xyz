@@ -30,6 +30,7 @@ h1.errcode {
     display: inline;
     font-family: 120px 'Roboto Mono', monospace;
     margin: 0px, 0px, 8px;
+    padding-right: 20px;
     vertical-align: middle;
 }
 
@@ -106,6 +107,7 @@ a.username {
     opacity: 1;
     transition: opacity 2s ease-in-out, width 1.5s ease-in-out;
 }
+
 .info:hover {
     width: 375px;
     transition: width 1.5s ease-in-out;
