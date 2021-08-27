@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
 body {
-    background: rgb(32, 30, 30) url('src/bg/sydney.jpg') no-repeat fixed center;
+    background: rgb(32, 30, 30) url('src/bg/seacliff.jpg') no-repeat fixed center;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
     padding: 100px;
@@ -41,10 +41,15 @@ img.icon {
     margin: 0px 5px 0px 0px;
 }
 
+.blank {
+    display: inline;
+    height: 64px;
+    width: 10px;
+}
+
 .info {
-    padding-left: 0px;
-    padding-right: 5px;
     display: inline-flex;
+    padding-left: 10px;
     height: 64px;
     width: 70px;
     transition: width 1.5s ease-in-out;
@@ -74,7 +79,7 @@ p.errmsg {
 }
 
 p.source {
-    color: rgb(60, 58, 58);
+    color: #FFE6E6;
     display: inline-block;
     white-space: nowrap;
     font: 16px 'Roboto Mono', monospace;
@@ -92,10 +97,10 @@ a.username {
     display: inline-flex;
     font: 32px 'Roboto Mono', monospace;
     position: relative;
-    padding: 7px 0;
+    padding: 7px 5px;
     text-decoration: none;
     white-space: nowrap;
-    width: 20px;
+    width: 300px;
     height: 50px;
     z-index: 3;
     opacity: 0;
@@ -105,10 +110,10 @@ a.username {
 .info:hover a.username {
     width: 300px;
     opacity: 1;
-    transition: opacity 2s ease-in-out, width 1.5s ease-in-out;
+    transition: opacity 2s ease-in-out;
 }
 
 .info:hover {
     width: 375px;
-    transition: width 1.5s ease-in-out;
+    transition: width 1s ease-in-out;
 }
