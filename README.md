@@ -9,6 +9,4 @@ Original site can be found on the [`v1`](https://github.com/agentisnotreal/agent
 # Acknowledgements
 
 - My [icon](https://agentdoesnotexist.xyz/src/svg/agentisnotreal.svg) drawn by **khoi345**
-- Some files hosted by [ItzRock](https://itzrock.xyz) on their own server
-- Furry Rap by [senzawa](https://www.youtube.com/c/senzawa/videos)
 - The **Discord**, **Github** & **Twitter** icons are trademarks of their respective owners
