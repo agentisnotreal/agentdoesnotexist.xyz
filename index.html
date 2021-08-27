@@ -10,9 +10,10 @@
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal</title>
     <script src="src/js/modifySrcBar.js"></script>
+    <script src="src/js/setBackground.js"></script>
 </head>
 
-<body onload="setDisplayedCommit('commit');">
+<body onload="setDisplayedCommit('commit'); setBackground(false)">
 
     <div class="about">
         <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%;vertical-align: middle; display: inline;">
@@ -46,7 +47,10 @@
             <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
             <a class="source" id="commit">git-UNKNOWN</a>
             <br>
-            <p class="source"><img src="src/svg/map-marker-alt.svg" alt="Location" style="height: 14px;"> Sea Cliff Bridge - Clifton NSW, AU</p>
+            <p class="source">
+                <img src="src/svg/map-marker-alt.svg" alt="Location" style="height: 14px;">
+                <p class="source" id="location" style='white-space: pre;'>Sea Cliff Bridge - Clifton NSW, AU</p>
+            </p>
         </p>
     </div>
 
