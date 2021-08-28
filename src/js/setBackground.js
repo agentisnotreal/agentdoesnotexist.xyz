@@ -8,7 +8,7 @@ var backgrounds = [{
     },
     {
         'name': 'sydney',
-        'location': 'Sydney Harbour Bridge - Sydney NSW, AU'
+        'location': 'Sydney Harbour Bridge - The Rocks NSW, AU'
     }
 ]
 
