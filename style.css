@@ -19,7 +19,7 @@ body {
 }
 
 .list {
-    background-color: rgba(32, 32, 30, 0.2);
+    background-color: #0d1117;
     color: rgb(255, 255, 255);
     display: inline-flex;
     text-align: left;
@@ -28,7 +28,7 @@ body {
 
 .listitem {
     width: 256px;
-    background-color: rgb(83, 188, 37, 0.3);
+    background-color: rgba(2, 23, 54, 0.2);
     height: 600px;
     margin: 10px 10px;
     padding: 10px 10px;
