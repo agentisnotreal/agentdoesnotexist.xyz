@@ -18,6 +18,25 @@ body {
     width: 930px;
 }
 
+.list {
+    background-color: rgba(32, 32, 30, 0.2);
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    text-align: left;
+    width: max-content;
+}
+
+.listitem {
+    width: 256px;
+    background-color: rgb(83, 188, 37, 0.3);
+    height: 600px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: inline-flex;
+    position: relative;
+    cursor: pointer;
+}
+
 h1 {
     display: inline;
     font-size: 120px;
@@ -68,6 +87,16 @@ p {
     font-size: 32px;
     display: inline-block;
     margin: 0px 0px 0px 0px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 0;
+}
+
+p.description {
+    font-size: 20px;
+    color: rgb(193, 193, 193)
 }
 
 p.errmsg {
