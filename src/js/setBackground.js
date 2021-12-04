@@ -29,6 +29,5 @@ function setBackground(greyscale) {
         background.name += '-greyscale';
     }
 
-    document.body.style.backgroundImage = 'url(\'/src/bg/' + background.name + '.jpg\')';
-    location.innerText = ' ' + background.location;
+    document.body.style.backgroundImage = 'url(\'src/bg/' + background.name + '.jpg\')';
 }

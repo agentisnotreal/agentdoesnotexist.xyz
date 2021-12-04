@@ -4,13 +4,19 @@ My personal website, open source under the GNU General Public License.
 
 The rickroll is located in [`/amogus.html`](https://agentdoesnotexist.xyz/amogus)
 
-Original site can be found on the [`v1`](https://github.com/agentisnotreal/agentdoesnotexist.xyz/tree/v1) branch.
+## Older Versions
+This is the **third** iteration of my website.
 
-# Acknowledgements
+Older versions can be found on their respective branches:
 
-- My [icon](https://agentdoesnotexist.xyz/src/svg/agentisnotreal.svg) drawn by **khoi345**
+[`v2` Branch ](https://github.com/agentisnotreal/agentdoesnotexist.xyz/tree/v2) (Last commit: 05/09/2021)
+
+[`v1` Branch](https://github.com/agentisnotreal/agentdoesnotexist.xyz/tree/v1) (Last commit: 22/02/2021)
+
+## Acknowledgements
+
+- My [icon](https://agentdoesnotexist.xyz/src/svg/agentisnotreal.svg) originally drawn by **khoi345**
 - The **Discord**, **Github** & **Twitter** icons are trademarks of their respective owners
-
 
 > **Notice**
 >

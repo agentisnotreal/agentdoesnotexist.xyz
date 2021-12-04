@@ -5,60 +5,35 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Welcome to my space on the internet!">
     <meta name="keywords" content="agentisnotreal, agentdoesnotexist, Agent113YT, Minecritters113">
-    <meta name="viewport" content="width=1030px, initial-scale=0.4">
-    <meta content="#021736" data-react-helmet="true" property="theme-color">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#4abea1" data-react-helmet="true" property="theme-color">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal</title>
-    <script src="src/js/modifySrcBar.js"></script>
+    <script src="src/js/getGHCommit.js"></script>
     <script src="src/js/setBackground.js"></script>
 </head>
 
 <body onload="setDisplayedCommit('commit'); setBackground(false)">
 
     <div class="about">
-        <img class="icon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%;vertical-align: middle; display: inline;">
-        <h1 style="display: inline; vertical-align: middle;">agentisnotreal</h1>
-
-        <!-- Account Links -->
-        <div>
-            <!-- GitHub -->
-            <div class="info" id="github">
-                <img class="icon" src="src/svg/github.svg" alt="GitHub: ">
-                <a class="username" href="https://github.com/agentisnotreal">/agentisnotreal</a>
-            </div>
-
-            <!-- Twitter -->
-            <div class="info" id="twitter">
-                <img class="icon" src="src/svg/twitter.svg" alt="Twitter: ">
-                <a class="username" href="https://twitter.com/agentisnotreal">@agentisnotreal</a>
-            </div>
-
-            <!-- Discord -->
-            <div class="info" id="discord">
-                <img class="icon" src="src/svg/discord.svg" alt="Discord: ">
-                <a class="username" href="https://discord.com/users/145801678610759680">agentisnotreal#1090</a>
-            </div>
-        </div>
-
+        <img class="icon siteicon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%; ">
+        <h1>AGENTISNOTREAL</h1>
         <br>
-
-        <p>Utilities and other tools: <a href="https://stuff.agentdoesnotexist.xyz">stuff.agentdoesnotexist.xyz</a></p>
-    </div>
-
-    <!-- Source Bar -->
-    <div class="src">
-        <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/index.html">Source Code</a> |
-            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
-            <a class="source" id="commit">git-UNKNOWN</a>
-            <br>
-            <p class="source">
-                <img src="src/svg/map-marker-alt.svg" alt="Location" style="height: 14px;">
-                <p class="source" id="location" style='white-space: pre;'> Nowhere (try enabling JS!)</p>
-            </p>
-        </p>
+        <p><a class="invisible" href="tools.html">Tools</a> | <a class="invisible" href="projects.html">Projects</a></p>
+        <br><br>
+        <a href="https://github.com/agentisnotreal"><img class="icon" src="src/svg/github.svg" alt="agentisnotreal (GitHub)"></a>
+        <a href="https://twitter.com/agentisnotreal"><img class="icon" src="src/svg/twitter.svg" alt="@agentisnotreal (Twitter)"></a>
+        <a href="https://discord.com/users/145801678610759680"><img class="icon" src="src/svg/discord.svg" alt="agentisnotreal#1090 (Discord)"></a>
     </div>
 
 </body>
+
+<footer>
+    <div>
+        <p id="commit">git-UNKNOWN</p>
+    </div>
+    <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Website Repository</a>
+</footer>
 
 </html>

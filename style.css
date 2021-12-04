@@ -1,148 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fontlibrary.org/face/metropolis');
 body {
-    background: rgb(32, 30, 30) no-repeat fixed center;
+    background: #10131a no-repeat fixed center;
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'MetropolisExtraLight', sans-serif;
     padding: 100px;
+    overflow-wrap: break-word;
 }
 
-.about {
-    background-color: rgba(32, 32, 30, 0.2);
-    color: rgb(255, 255, 255);
-    display: inline-block;
-    max-height: 250px;
-    margin: 0 5 0 0;
-    padding: 10px 0px 10px 10px;
-    position: static;
-    text-align: left;
-    width: 930px;
-}
-
-.list {
-    background-color: #0d1117;
-    color: rgb(255, 255, 255);
-    display: inline-flex;
-    text-align: left;
-    width: max-content;
-}
-
-.listitem {
-    width: 256px;
-    background-color: rgba(2, 23, 54, 0.2);
-    height: 600px;
-    margin: 10px 10px;
-    padding: 10px 10px;
-    display: inline-flex;
-    position: relative;
-    cursor: pointer;
+footer {
+    border-top: 2px solid #4abea1;
+    background-color: #34363c;
+    bottom: 0;
+    color: aliceblue;
+    padding: 15px 0;
+    position: fixed;
+    left: 0;
+    text-align: center;
+    width: 100%;
 }
 
 h1 {
-    display: inline;
-    font-size: 120px;
-    margin: 0px, 0px, 10px;
-    vertical-align: middle;
+    font-family: 'MetropolisExtraLight', sans-serif;
+    font-size: 6vw;
+    margin: 0;
 }
 
-h1.errcode {
-    color: rgb(204, 204, 42);
-    display: inline;
-    font-family: 120px 'Roboto Mono', monospace;
-    margin: 0px, 0px, 8px;
-    padding-right: 20px;
-    vertical-align: middle;
+h2 {
+    font-family: 'MetropolisExtraLight', sans-serif;
+    font-size: 3vw;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'MetropolisExtraLight', sans-serif;
+    font-size: 2vw;
+    margin: 0;
+}
+
+p {
+    font-size: 2em;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    color: rgb(200, 150, 255);
+    text-decoration: none;
+}
+
+a.invisible {
+    color: inherit;
+    text-decoration: none;
 }
 
 img.icon {
     display: inline-block;
-    height: 64px;
-    width: 64px;
+    height: 2vw;
     margin: 0px 5px 0px 0px;
-}
-
-.blank {
-    display: inline;
-    height: 64px;
-    width: 10px;
-}
-
-.info {
-    display: inline-flex;
-    padding-left: 10px;
-    height: 64px;
-    width: 70px;
-    transition: width 1.5s ease-in-out;
-}
-
-.src {
-    background-color: rgba(32, 32, 30, 0.7);
-    bottom: 0;
-    padding: 0px 15px 0px 15px;
-    position: fixed;
-    text-align: center;
-    width: 425px;
-}
-
-p {
-    font-size: 32px;
-    display: inline-block;
-    margin: 0px 0px 0px 0px;
-}
-
-h2 {
-    font-size: 25px;
-    margin: 0;
-}
-
-p.description {
-    font-size: 20px;
-    color: rgb(193, 193, 193)
-}
-
-p.errmsg {
-    color: rgb(204, 204, 42);
-    display: inline-block;
-    font: 72px 'Roboto Mono', monospace;
-    margin: 0px 0px 0px 0px;
     vertical-align: middle;
+    width: 2vw;
 }
 
-p.source {
-    color: #FFE6E6;
-    display: inline-block;
-    white-space: nowrap;
-    font: 16px 'Roboto Mono', monospace;
-}
-
-a.source {
-    color: rgb(187, 223, 197);
-    display: inline-block;
-    font-family: inherit;
-    font-size: inherit;
-}
-
-a.username {
+.about {
+    background-color: #34363c;
+    border-left: 5px solid #4abea1;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
-    display: inline-flex;
-    font: 32px 'Roboto Mono', monospace;
-    position: relative;
-    padding: 7px 5px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+.list {
+    background-color: #34363c;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.listitem {
+    background-color: rgba(2, 23, 54, 0.2);
+    border-radius: 10px;
+    border-top: 3px solid #4abea1;
+    display: inline-block;
+    margin: 10px;
+    min-height: 100%;
+    padding: 10px 10px;
+    vertical-align: top;
+    width: 25%;
+}
+
+.listitem h2 {
+    color: rgb(200, 200, 255);
+    font-size: 1vw;
     text-decoration: none;
-    white-space: nowrap;
-    width: 300px;
-    height: 50px;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 1s ease-in-out, width 1.5s ease-in-out;
 }
 
-.info:hover a.username {
-    width: 300px;
-    opacity: 1;
-    transition: opacity 2s ease-in-out;
+.listitem p {
+    font-size: 1em;
 }
 
-.info:hover {
-    width: 375px;
-    transition: width 1s ease-in-out;
+.textinput {
+    background-color: #34363c;
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #4abea1;
+    color: #ffffff;
+    margin: 0 15px;
+}
+
+.submit {
+    background-color: #7bb263;
+    border: 0;
+    border-radius: 20px;
+    color: #ffffff;
+    width: 75px;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lookup and compare Discord/Roblox verification details from RoVer and Bloxlink">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#4abea1" data-react-helmet="true" property="theme-color">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" type="image/svg" href="../src/svg/agentisnotreal.svg">
+    <title>agentisnotreal | Tools - Rover-Bloxlink Database Lookup</title>
+    <script src="../src/js/getDb.js"></script>
+    <script src="../src/js/modifySrcBar.js"></script>
+</head>
+
+<body onload="setDisplayedCommit('commit');">
+
+    <!-- Dummy frame -->
+    <iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+    <div class="list">
+        <div style="text-align: center;">
+            <!-- Title -->
+            <h1 style="font-size: 4vw;">Rover-Bloxlink Database Lookup</h1>
+            <br>
+            <p style="font-size: 2vw;">Enter a Discord ID below to scan between both Discord-Roblox verification databases for linked account information</p>
+            <br><br>
+            <!-- Discord ID Input -->
+            <form action="./rblx-database-lookup.html" target="dummyframe">
+                <label for="discordId">Discord ID</label>
+                <input class="textinput" type="text" id="discordId" name="discordId" value="" autocomplete="off">
+                <input class="submit" type="submit" value="Lookup" onclick="setData('discordId');">
+            </form>
+        </div>
+        <br><br>
+        <!-- Data -->
+        <div style="margin: auto; width: 50%;">
+            <!-- Roblox avatar -->
+            <div style="display: inline-block; width:50%; vertical-align: top;">
+                <img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1" alt="Avatar" style="height: 100%; width: 100%;">
+            </div>
+
+            <div style="display: inline-block; vertical-align: center;">
+                <!-- Roer -->
+                <h2>RoVer</h2>
+                <h3>Username</h3>
+                <p id="roverUsername">Unknown</p>
+                <h3>User ID</h3>
+                <p id="roverId">Unknown</p>
+
+                <!-- Bloxlink -->
+                <h2>Bloxlink</h2>
+                <h3>User ID</h3>
+                <p id="bloxlinkId">Unknown</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div>
+        <p id="commit">git-UNKNOWN</p>
+    </div>
+    <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Website Repository</a>
+</footer>
+
+</html>

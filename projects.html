@@ -4,109 +4,80 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="description" content="My small library of projects">
-    <meta name="keywords" content="agentisnotreal, agentdoesnotexist, Agent113YT, Minecritters113">
-    <meta name="viewport" content="width=1030px, initial-scale=0.4">
-    <meta content="#021736" data-react-helmet="true" property="theme-color">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#4abea1" data-react-helmet="true" property="theme-color">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
     <title>agentisnotreal | Projects</title>
-    <script src="src/js/modifySrcBar.js"></script>
+    <script src="src/js/getGHCommit.js"></script>
     <script src="src/js/setBackground.js"></script>
 </head>
 
-<body onload="setDisplayedCommit('commit'); setBackground(false)">
-
-    <div class="about">
-        <h1 style="display: inline; vertical-align: middle;">Projects</h1>
-        <p>My small library of projects that I have developed</p>
-    </div>
-    <br><br>
+<body onload="setDisplayedCommit('commit'); setBackground(true)">
 
     <div class="list">
-        <div class="listitem" onclick="location.href='https:/\/www.roblox.com/games/7350229621/Infinity-Tommy-Towers';">
-            <div style="text-align: center; display: inline-block; position: absolute; margin: 0 3px;">
-                <img src="src/img/infinitytommytowers.png" alt="Infinity Tommy Towers Icon" style="height: 250px; width: 250px;">
-            </div>
-
-            <div style="display: inline-block; position: absolute; margin-top: 270px;">
-                <p style="font-size: 15px;">Roblox</p>
-                <hr style="width: 50px; margin-left: 0; color: white;">
-                <h2>Infinity Tommy Towers</h2>
-                <p class="description">Endlessly generating tower jumps, that go on forever and ever. Can you reach the top of the leaderboard?</p>
-                <div style="border-left: 2px solid rgb(0,0,128); padding-left: 5px; margin-top: 10px;">
-                    <p>Luau</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="listitem" onclick="location.href='https:/\/www.roblox.com/games/7059068471/Infinity-Wall-Jumps';">
-            <div style="text-align: center; display: inline-block; position: absolute; margin: 0 3px;">
-                <img src="src/img/infinitywalljumps.png" alt="Infinity Wall Jumps Icon" style="height: 250px; width: 250px;">
-            </div>
-
-            <div style="display: inline-block; position: absolute; margin-top: 270px;">
-                <p style="font-size: 15px;">Roblox</p>
-                <hr style="width: 50px; margin-left: 0; color: white;">
-                <h2>Infinity Wall Jumps</h2>
-                <p class="description">Wall jumps that keep generating, forever and ever. Try and reach the top of the leaderboard!</p>
-                <div style="border-left: 2px solid rgb(0,0,128); padding-left: 5px; margin-top: 10px;">
-                    <p>Luau</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="listitem" onclick="location.href='https:/\/github.com/agentisnotreal/PlasmaQS-MemberBot';">
-            <div style="text-align: center; display: inline-block; position: absolute; margin: 0 20px; vertical-align: middle;">
-                <p style="font-size: 125px;">N/A</p>
-            </div>
-
-            <div style="display: inline-block; position: absolute; margin-top: 270px;">
-                <p style="font-size: 15px;">Discord</p>
-                <hr style="width: 50px; margin-left: 0; color: white;">
-                <h2>PI-QS Member Bot</h2>
-                <p class="description">Compares two groups within the Roblox sci-fi community, along with other groups. A bit more included.</p>
-                <div style="border-left: 2px solid #f1e05a; padding-left: 5px; margin-top: 10px;">
-                    <p>JavaScript</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="listitem" onclick="location.href='https:/\/github.com/agentisnotreal/agentdoesnotexist.xyz';">
-            <div style="text-align: center; display: inline-block; position: absolute; margin: 0 3px;">
-                <img src="src/svg/agentisnotreal.svg" alt="Infinity Wall Jumps Icon" style="height: 250px; width: 250px;">
-            </div>
-
-            <div style="display: inline-block; position: absolute; margin-top: 270px;">
-                <p style="font-size: 15px;">Internet</p>
-                <hr style="width: 50px; margin-left: 0; color: white;">
-                <h2>agentdoesnotexist.xyz</h2>
-                <p class="description">My own space on the internet. You also happen to be on it right now, so congratulations on finding it!</p>
-                <div style="border-left: 2px solid #e34c26; padding-left: 5px; margin-top: 10px;">
-                    <p>HTML</p>
-                </div>
-                <div style="border-left: 2px solid #f1e05a; padding-left: 5px; margin-top: 10px;">
-                    <p>JavaScript</p>
-                </div>
-                <div style="border-left: 2px solid #563d7c; padding-left: 5px; margin-top: 10px;">
-                    <p>CSS</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Source Bar -->
-    <div class="src">
-        <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/projects.html">Source Code</a> |
-            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
-            <a class="source" id="commit">git-UNKNOWN</a>
+        <div style="text-align: center;">
+            <img class="icon siteicon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%;">
+            <h1>PROJECTS</h1>
             <br>
-            <p class="source">
-                <img src="src/svg/map-marker-alt.svg" alt="Location" style="height: 14px;">
-                <p class="source" id="location" style='white-space: pre;'> Nowhere (try enabling JS!)</p>
-            </p>
-        </p>
+            <p>My small library of projects that I have developed</p>
+        </div>
+        <br>
+        <div>
+            <!-- Infinity Tommy Towers-->
+            <a href="https://www.roblox.com/games/7350229621/Infinity-Tommy-Towers" class="invisible">
+                <div class="listitem">
+                    <img src="src/img/infinitytommytowers.png" alt="Infinity Tommy Towers Icon" style="height: 100%; width: 100%; margin: auto;">
+                    <br><br>
+                    <p style="font-size: 15px;">ROBLOX</p>
+                    <hr style="width: 50px; margin-left: 0; color: white;">
+                    <h2>Infinity Tommy Towers</h2>
+                    <p>Endlessly generating tower jumps, that go on forever and ever. Can you reach the top of the leaderboard?</p>
+                </div>
+            </a>
+            <!-- Infinity Wall Jumps-->
+            <a href="https://www.roblox.com/games/7059068471/Infinity-Wall-Jumps" class="invisible">
+                <div class="listitem">
+                    <img src="src/img/infinitywalljumps.png" alt="Infinity Wall Jumps Icon" style="height: 100%; width: 100%; margin: auto;">
+                    <br><br>
+                    <p style="font-size: 15px;">ROBLOX</p>
+                    <hr style="width: 50px; margin-left: 0; color: white;">
+                    <h2>Infinity Wall Jumps</h2>
+                    <p>Wall jumps that keep generating, forever and ever. Try and reach the top of the leaderboard!</p>
+                </div>
+            </a>
+            <!-- agentdoesnotexist.xyz-->
+            <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz" class="invisible">
+                <div class="listitem">
+                    <img src="./src/svg/agentisnotreal.svg" alt="agentdoesnotexist.xyz Icon" style="height: 100%; width: 100%; margin: auto;">
+                    <br><br>
+                    <p style="font-size: 15px;">WEBSITE</p>
+                    <hr style="width: 50px; margin-left: 0; color: white;">
+                    <h2>agentdoesnotexist.xyz</h2>
+                    <p>My own space on the internet. You also happen to be on it right now. Currently on V3 of this site.</p>
+                </div>
+            </a>
+            <!-- Plasma-QS Member Bot-->
+            <a href="https://github.com/agentisnotreal/PlasmaQS-MemberBot" class="invisible">
+                <div class="listitem">
+                    <img src="" alt="No Image Available" style="height: 100%; width: 100%; margin: auto;">
+                    <br><br>
+                    <p style="font-size: 15px;">DISCORD</p>
+                    <hr style="width: 50px; margin-left: 0; color: white;">
+                    <h2>Plasma-QS Member Bot</h2>
+                    <p>Compares two groups within the Roblox sci-fi community, along with other groups. A bit more included.</p>
+                </div>
+            </a>
+        </div>
     </div>
 
 </body>
+
+<footer>
+    <div>
+        <p id="commit">git-UNKNOWN</p>
+    </div>
+    <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Website Repository</a>
+</footer>
 
 </html>

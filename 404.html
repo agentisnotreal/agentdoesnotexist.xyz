@@ -3,37 +3,33 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="404 Page not found">
-    <meta name="viewport" content="width=1030px, initial-scale=0.4">
-    <meta content="#021736" data-react-helmet="true" property="theme-color">
-    <link rel="stylesheet" href="/style.css">
+    <meta name="description" content="404 | Page not found">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#BF4B68" data-react-helmet="true" property="theme-color">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="/src/svg/agentisnotreal.svg">
     <title>agentisnotreal | 404</title>
-    <script src="/src/js/modifySrcBar.js"></script>
+    <script src="/src/js/getGHCommit.js"></script>
     <script src="/src/js/setBackground.js"></script>
 </head>
 
-<body onload="setDisplayedCommit('commit'); setBackground(true);">
+<body onload="setDisplayedCommit('commit'); setBackground(true)">
 
-    <div class="about" style="background-color: rgba(32, 32, 30, 0.5);">
-        <h1 class="errcode">404</h1>
-        <p class="errmsg">PAGE NOT FOUND</p><br>
-        <p>Make first legal U-turn at... Recalculating</p>
-    </div>
-
-    <!-- Source Bar -->
-    <div class="src">
-        <p class="source"><a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/404.html">Source Code</a> |
-            <a class="source" href="https://github.com/agentisnotreal/agentdoesnotexist.xyz/blob/main/README.md#Acknowledgements">Acknowledgements</a> |
-            <a class="source" id="commit">git-UNKNOWN</a>
-            <br>
-            <p class="source">
-                <img src="/src/svg/map-marker-alt.svg" alt="Location" style="height: 14px;">
-                <p class="source" id="location" style='white-space: pre;'> Nowhere (try enabling JS!)</p>
-            </p>
-        </p>
+    <div class="about" style="border-color: #BF4B68">
+        <img class="icon siteicon" src="/src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%; ">
+        <h1>404<br>PAGE NOT FOUND</h1>
+        <br>
+        <p>Try a bit harder next time!</p>
+        <br><br>
     </div>
 
 </body>
+
+<footer style="border-color: #BF4B68">
+    <div>
+        <p id="commit">git-UNKNOWN</p>
+    </div>
+    <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Website Repository</a>
+</footer>
 
 </html>
