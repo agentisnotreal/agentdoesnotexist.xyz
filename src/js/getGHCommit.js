@@ -6,7 +6,7 @@ async function getLastCommit() {
     }
 
     return new Promise((resolve, reject) => {
-        fetch("https://api.github.com/repos/agentisnotreal/agentdoesnotexist.xyz/commits/main")
+        fetch("https://api.github.com/repos/agentisnotreal/agentdoesnotexist.xyz/commits/v3")
             .then(function(res) {
                 return res.json();
             }).then(function(body) {
