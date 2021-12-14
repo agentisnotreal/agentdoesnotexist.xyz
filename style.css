@@ -119,3 +119,16 @@ img.icon {
     color: #ffffff;
     width: 75px;
 }
+
+table,
+th,
+td {
+    border-left: 2px solid #ffffff;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    width: 25%;
+}

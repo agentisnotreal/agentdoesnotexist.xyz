@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/svg" href="../src/svg/agentisnotreal.svg">
     <title>agentisnotreal | Tools - Rover-Bloxlink Database Lookup</title>
     <script src="../src/js/getDb.js"></script>
-    <script src="../src/js/modifySrcBar.js"></script>
+    <script src="../src/js/getGHCommit.js"></script>
 </head>
 
 <body onload="setDisplayedCommit('commit');">
@@ -34,26 +34,25 @@
         </div>
         <br><br>
         <!-- Data -->
-        <div style="margin: auto; width: 50%;">
-            <!-- Roblox avatar -->
-            <div style="display: inline-block; width:50%; vertical-align: top;">
-                <img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1" alt="Avatar" style="height: 100%; width: 100%;">
-            </div>
-
-            <div style="display: inline-block; vertical-align: center;">
-                <!-- Roer -->
-                <h2>RoVer</h2>
-                <h3>Username</h3>
-                <p id="roverUsername">Unknown</p>
-                <h3>User ID</h3>
-                <p id="roverId">Unknown</p>
-
-                <!-- Bloxlink -->
-                <h2>Bloxlink</h2>
-                <h3>User ID</h3>
-                <p id="bloxlinkId">Unknown</p>
-            </div>
-        </div>
+        <table style="font-size: 2vw; margin-left: auto; margin-right: auto;">
+            <thead>
+                <th></th>
+                <th>Database</th>
+                <th>Username</th>
+                <th>User ID</th>
+            </thead>
+            <tr>
+                <td rowspan="3"><img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1" alt="Avatar" style="height: 100%; width: 100%;"></tr>
+            <th>RoVer</th>
+            <td id="roverUsername">Unknown</td>
+            <td id="roverId">Unknown</td>
+            </tr>
+            <tr>
+                <th>Bloxlink</th>
+                <td>N/A</td>
+                <td id="bloxlinkId">Unknown</td>
+            </tr>
+        </table>
     </div>
 </body>
 
