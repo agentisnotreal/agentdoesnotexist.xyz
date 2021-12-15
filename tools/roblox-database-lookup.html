@@ -25,11 +25,13 @@
             <br>
             <p style="font-size: 2vw;">Enter a Discord ID below to scan between both Discord-Roblox verification databases for linked account information</p>
             <br><br>
+            <p style="font-size: 1vw;">Note: Bloxlink does not provide usernames when requested, and usernames from RoVer may not be the latest available.</p>
+            <br><br>
             <!-- Discord ID Input -->
             <form action="./rblx-database-lookup.html" target="dummyframe">
                 <label for="discordId">Discord ID</label>
                 <input class="textinput" type="text" id="discordId" name="discordId" value="" autocomplete="off">
-                <input class="submit" type="submit" value="Lookup" onclick="setData('discordId');">
+                <input id="submit" class="submit" type="submit" value="Lookup" onclick="setData('discordId');">
             </form>
         </div>
         <br><br>
@@ -42,17 +44,23 @@
                 <th>User ID</th>
             </thead>
             <tr>
-                <td rowspan="3"><img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1" alt="Avatar" style="height: 100%; width: 100%;"></tr>
+                <td rowspan="3"><img id="avatar" class="icon" src="http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1" alt="Avatar" style="height: 100%; width: 100%;">
+            </tr>
             <th>RoVer</th>
             <td id="roverUsername">Unknown</td>
-            <td id="roverId">Unknown</td>
+            <td><a id="roverId">Unknown</a></td>
             </tr>
             <tr>
                 <th>Bloxlink</th>
                 <td>N/A</td>
-                <td id="bloxlinkId">Unknown</td>
+                <td><a id="bloxlinkId">Unknown</a></td>
             </tr>
         </table>
+        <br><br>
+        <div style="text-align: center;">
+            <h3 style="font-size: 0.9vw;">Disclaimer</h3>
+            <p style="font-size: 0.7vw;">This tool and agentdoesnotexist.xyz is neither affiliated with Artifex Dev LLC (Bloxlink), the RoVer authors, the Roblox Corporation, or Discord Inc.</p>
+        </div>
     </div>
 </body>
 
