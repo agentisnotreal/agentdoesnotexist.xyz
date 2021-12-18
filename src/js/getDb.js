@@ -24,11 +24,16 @@ async function getData(discordid) {
 function cleanWorkspace(avatar, bloxlink, rover, button) {
     avatar.src = 'http://www.roblox.com/Thumbs/Avatar.ashx?x=250&y=250&Format=Png&userid=1';
 
+    // Clear RoVer data
     rover.username.textContent = 'Unknown';
     rover.id.textContent = 'Unknown';
+    rover.id.href = '';
 
+    // Clear Bloxlink data
     bloxlink.id.textContent = 'Unknown';
+    bloxlink.id.href = '';
 
+    // Button update
     button.value = 'Lookup';
     button.style.backgroundColor = '#4abea1'
 }
