@@ -5,12 +5,9 @@ async function getData(discordid) {
             rover: {}
         };
 
-        let roverFetch = await fetch('https://workers.agentdoesnotexist.xyz/rover', {
+        let roverFetch = await fetch('https://rover.agentisnotreal.workers.dev/user/' + discordid, {
             method: 'GET',
-            mode: 'cors',
-            headers: {
-                'discordid': discordid
-            },
+            mode: 'cors'
         });
 
         info.rover = await roverFetch.json();
