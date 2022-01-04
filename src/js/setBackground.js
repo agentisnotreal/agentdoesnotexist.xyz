@@ -9,6 +9,10 @@ var backgrounds = [{
     {
         'name': 'sydney',
         'location': 'Sydney Harbour Bridge - The Rocks NSW, AU'
+    },
+    {
+        'name': 'sydney-nye21',
+        'location': 'Sydney New Years Eve (2021) - Mrs Macquaries Point NSW, AU'
     }
 ]
 
@@ -29,5 +33,5 @@ function setBackground(greyscale) {
         background.name += '-greyscale';
     }
 
-    document.body.style.backgroundImage = 'url(\'src/bg/' + background.name + '.jpg\')';
+    document.body.style.backgroundImage = 'url(\'https://cdn.agentdoesnotexist.xyz/agentdoesnotexist-xyz/' + background.name + '.jpg\')';
 }
