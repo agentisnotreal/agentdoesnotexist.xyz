@@ -1,135 +1,45 @@
-@import url('https://fontlibrary.org/face/metropolis');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+@import url("https://use.typekit.net/vir8ikq.css");
 body {
-    background: #10131a no-repeat fixed center;
-    background-size: cover;
-    font-family: 'MetropolisExtraLight', sans-serif;
-    padding: 100px;
-    overflow-wrap: break-word;
-}
-
-footer {
-    border-top: 2px solid #4abea1;
-    background-color: #34363c;
-    bottom: 0;
-    color: aliceblue;
-    padding: 15px 0;
-    position: fixed;
-    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     text-align: center;
-    width: 100%;
+    background: linear-gradient(-45deg, #999, #666, #333, #000);
+    height: 100vh;
+    background-size: 400%;
+    overflow-y: hidden;
+    padding: 10vh 10vw;
+    animation: gradient 30s ease infinite;
 }
 
 h1 {
-    font-family: 'MetropolisExtraLight', sans-serif;
-    font-size: 6vw;
+    font-size: 10vh;
+    vertical-align: middle;
+    padding: 0;
     margin: 0;
-}
-
-h2 {
-    font-family: 'MetropolisExtraLight', sans-serif;
-    font-size: 3vw;
-    margin: 0;
-}
-
-h3 {
-    font-family: 'MetropolisExtraLight', sans-serif;
-    font-size: 2vw;
-    margin: 0;
+    font-family: input-mono-condensed, monospace;
+    font-weight: 300;
+    font-style: normal;
 }
 
 p {
-    font-size: 2em;
-    display: inline-block;
-    margin: 0px 0px 0px 0px;
+    padding: 0;
+    margin: 0 0 1vh 0;
+    font-size: 3vh;
 }
 
-a {
-    color: rgb(200, 150, 255);
-    text-decoration: none;
+p#time {
+    font-size: 2vh;
 }
 
-a.invisible {
-    color: inherit;
-    text-decoration: none;
-}
-
-img.icon {
-    display: inline-block;
-    height: 2vw;
-    margin: 0px 5px 0px 0px;
-    vertical-align: middle;
-    width: 2vw;
-}
-
-.about {
-    background-color: #34363c;
-    border-left: 5px solid #4abea1;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-    width: 80%;
-}
-
-.list {
-    background-color: #34363c;
-    border-radius: 10px;
-    color: rgb(255, 255, 255);
-    margin: auto;
-    padding: 20px;
-    width: 80%;
-}
-
-.listitem {
-    background-color: rgba(2, 23, 54, 0.2);
-    border-radius: 10px;
-    border-top: 3px solid #4abea1;
-    display: inline-block;
-    margin: 10px;
-    min-height: 100%;
-    padding: 10px 10px;
-    vertical-align: top;
-    width: 25%;
-}
-
-.listitem h2 {
-    color: rgb(200, 200, 255);
-    font-size: 1vw;
-    text-decoration: none;
-}
-
-.listitem p {
-    font-size: 1em;
-}
-
-.textinput {
-    background-color: #34363c;
-    border: 0px;
-    border-radius: 20px;
-    box-shadow: 0 0 0 1px #4abea1;
-    color: #ffffff;
-    margin: 0 15px;
-}
-
-.submit {
-    background-color: #4abea1;
-    border: 0;
-    border-radius: 20px;
-    color: #ffffff;
-    max-width: 150px;
-}
-
-table,
-th,
-td {
-    border-top: 2px solid #ffffff;
-    border-collapse: collapse;
-    text-align: left;
-}
-
-th,
-td {
-    width: 25%;
-    padding-left: 10px;
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

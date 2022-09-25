@@ -9,31 +9,15 @@
     <meta content="#4abea1" data-react-helmet="true" property="theme-color">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/svg" href="src/svg/agentisnotreal.svg">
+    <script type="module" src="./js/splatoontitlegen.js"></script>
+    <script type="module" src="./js/clock.js"></script>
     <title>agentisnotreal</title>
-    <script src="src/js/getGHCommit.js"></script>
-    <script src="src/js/setBackground.js"></script>
 </head>
 
-<body onload="setDisplayedCommit('commit'); setBackground(false)">
-
-    <div class="about">
-        <img class="icon siteicon" src="src/svg/agentisnotreal.svg" alt="agentisnotreal" style="height: 12%; width: 12%; ">
-        <h1>AGENTISNOTREAL</h1>
-        <br>
-        <p><a class="invisible" href="tools.html">Tools</a> | <a class="invisible" href="projects.html">Projects</a></p>
-        <br><br>
-        <a href="https://github.com/agentisnotreal"><img class="icon" src="src/svg/github.svg" alt="agentisnotreal (GitHub)"></a>
-        <a href="https://twitter.com/agentisnotreal"><img class="icon" src="src/svg/twitter.svg" alt="@agentisnotreal (Twitter)"></a>
-        <a href="https://discord.com/users/145801678610759680"><img class="icon" src="src/svg/discord.svg" alt="agentisnotreal#1090 (Discord)"></a>
-    </div>
-
+<body>
+    <p id="time">Day, 00 Mnt 2000, 00:00:00 AEST (UTC +10)</p>
+    <h1>agentisnotreal</h1>
+    <p><span id="splatoontitle">adjective subject</span> & sometimes a programmer</p>
 </body>
-
-<footer>
-    <div>
-        <p id="commit">git-UNKNOWN</p>
-    </div>
-    <a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">Website Repository</a>
-</footer>
 
 </html>
