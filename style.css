@@ -5,11 +5,14 @@ body {
     color: white;
     text-align: center;
     background: linear-gradient(-45deg, rgb(132, 133, 152), rgb(68, 66, 73), rgb(35, 35, 39), rgb(17, 17, 18));
-    height: 100vh;
     background-size: 400%;
-    overflow-y: hidden;
     padding: 10vh 10vw;
     animation: gradient 30s ease infinite;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    min-height: calc(100vh - 20vh);
 }
 
 h1 {
@@ -37,6 +40,12 @@ p#time {
     min-height: 0;
 }
 
+.title-box p {
+    display: none;
+    font-size: 2vh;
+    vertical-align: middle;
+}
+
 p.divider {
     display: inline-block;
     color: white;
@@ -54,14 +63,8 @@ a {
     font-size: 1.5vh;
 }
 
-footer p {
-    font-size: 1.5vh;
-}
-
-.title-box p {
-    display: none;
-    font-size: 2vh;
-    vertical-align: middle;
+.social-media-icons {
+    margin: 2vw;
 }
 
 .icon {
@@ -72,8 +75,12 @@ footer p {
     width: 3vw;
 }
 
-.social-media-icons {
-    margin: 2vw;
+footer {
+    height: 10vh;
+}
+
+footer p {
+    font-size: 1.5vh;
 }
 
 @keyframes gradient {
@@ -86,9 +93,4 @@ footer p {
     100% {
         background-position: 0% 50%;
     }
-}
-
-footer {
-    margin-top: 30vh;
-    margin-bottom: 0;
 }
