@@ -20,6 +20,8 @@ h1 {
     font-family: input-mono-condensed, monospace;
     font-weight: 300;
     font-style: normal;
+    min-height: 14vh;
+    display: inline-block;
 }
 
 p {
@@ -32,6 +34,45 @@ p#time {
     font-size: 2vh;
 }
 
+p.divider {
+    display: inline-block;
+    color: white;
+    margin: 0 1vw;
+    font-size: 3vw;
+    vertical-align: middle;
+    font-family: input-mono-condensed, monospace;
+    font-weight: 200;
+    font-style: normal;
+}
+
+a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+
+footer p {
+    font-size: 1.5vh;
+}
+
+.title-box p {
+    display: none;
+    font-size: 2vh;
+    vertical-align: middle;
+}
+
+.icon {
+    display: inline-block;
+    height: 3vw;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    width: 3vw;
+}
+
+.social-media-icons {
+    margin: 4vh;
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -42,4 +83,9 @@ p#time {
     100% {
         background-position: 0% 50%;
     }
+}
+
+footer {
+    margin-top: 50vh;
+    margin-bottom: 0;
 }
