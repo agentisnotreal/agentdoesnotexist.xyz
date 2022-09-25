@@ -1,21 +1,22 @@
 let adjective = await fetch('./js/splatoontitles/adjective.json').then(x => x.json());
 let subject = await fetch('./js/splatoontitles/subject.json').then(x => x.json());
 
-let title = document.getElementById('splatoon-title')
-let ptext = document.getElementById('programmer-text');
+let titleEl = document.getElementById('splatoon-title')
+let ptextEl = document.getElementById('programmer-text');
 
-let text = (adjective[Math.round(Math.random() * (adjective.length))] + ' ' + subject[Math.round(Math.random() * (subject.length))]).toLowerCase();
-let pt = ' & sometimes a programmer';
+let title = (adjective[Math.round(Math.random() * (adjective.length))] + ' ' + subject[Math.round(Math.random() * (subject.length))]).toLowerCase();
+let ptext = ' & sometimes a programmer';
 
 
 let typewriter = setInterval(() => {
-    if (title.textContent.length < text.length) {
-        title.textContent += text.charAt(title.textContent.length);
+    if (titleEl.textContent.length < title.length) {
+        titleEl.textContent += title.charAt(titleEl.textContent.length);
     } else {
-        if (ptext.textContent.length < pt.length) {
-            ptext.textContent += pt.charAt(ptext.textContent.length);
+        if (ptextEl.textContent.length < ptext.length) {
+            ptextEl.textContent += ptext.charAt(ptextEl.textContent.length);
         } else {
             document.getElementById('asterisk').textContent = '*';
+            document.getElementById('splatoon-title-disclaimer').style = 'display: block;'
             clearInterval(typewriter);
         }
     }

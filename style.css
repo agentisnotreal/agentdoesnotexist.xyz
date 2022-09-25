@@ -38,6 +38,11 @@ p#time {
     font-size: 1vw;
     margin: 0;
     min-height: 0;
+    display: none;
+}
+
+p#splatoon-title-disclaimer {
+    display: none;
 }
 
 .title-box p {
