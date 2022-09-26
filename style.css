@@ -52,11 +52,18 @@ p#time {
 
 p#splatoon-title-disclaimer {
     display: none;
+    margin: 0;
+    min-height: 0;
+}
+
+p#secret {
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    font-size: 0.5vw;
 }
 
 p.divider {
     display: inline-block;
-    color: white;
     margin: 0 1vw;
     font-size: 3vw;
     vertical-align: middle;
