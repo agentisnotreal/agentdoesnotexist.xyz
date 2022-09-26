@@ -27,6 +27,15 @@ h1 {
     display: inline-block;
 }
 
+span#page-title {
+    border-right: 5px none;
+}
+
+noscript.page-title {
+    border-right: 5px solid white;
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
 p {
     padding: 0;
     margin: 0 0 1vh 0;
@@ -43,12 +52,6 @@ p#time {
 
 p#splatoon-title-disclaimer {
     display: none;
-}
-
-.title-box p {
-    display: none;
-    font-size: 2vh;
-    vertical-align: middle;
 }
 
 p.divider {
@@ -86,6 +89,12 @@ footer {
 
 footer p {
     font-size: 1.5vh;
+}
+
+@keyframes blink-animation {
+    to {
+        border-right: 5px none;
+    }
 }
 
 @keyframes gradient {
