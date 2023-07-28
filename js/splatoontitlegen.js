@@ -9,12 +9,10 @@ let ptext = ' & sometimes a programmer';
 
 
 let typewriter = setInterval(() => {
-    if (titleEl.textContent.length < title.length) {
-        titleEl.textContent += title.charAt(titleEl.textContent.length);
-    } else {
-        if (ptextEl.textContent.length < ptext.length) {
-            ptextEl.textContent += ptext.charAt(ptextEl.textContent.length);
-        } else {
+    if (titleEl.textContent.length < title.length) titleEl.textContent += title.charAt(titleEl.textContent.length);
+    else {
+        if (ptextEl.textContent.length < ptext.length) ptextEl.textContent += ptext.charAt(ptextEl.textContent.length);
+        else {
             document.getElementById('asterisk').textContent = '*';
             document.getElementById('splatoon-title-disclaimer').style = 'display: block;'
             clearInterval(typewriter);
