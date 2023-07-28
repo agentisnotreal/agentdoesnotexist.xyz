@@ -3,18 +3,22 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    text-align: center;
+    text-align: left;
     background: linear-gradient(-45deg, #ffc6ff, #bdb2ff, #a0c4ff, #9bf6ff, #caffbf, #fdffb6, #ffd6a5, #ffadad);
     background-size: 400%;
-    padding: 10vh 10vw;
+    padding: 10vh 2vw;
     animation: gradient 30s ease infinite;
     overflow-y: hidden;
 }
 
 .wrapper {
     min-height: calc(100vh - 20vh);
+    width: calc(100vw - 4vw);
 }
 
+.main {
+    display: inline-block;
+}
 h1 {
     font-size: 8vw;
     vertical-align: middle;
@@ -79,15 +83,18 @@ a {
 }
 
 .social-media-icons {
-    margin: 2vw;
+    display: inline-grid;
+    padding-right: 5vw;
+    text-align: right;
+    float: right;
 }
 
 .icon {
     display: inline-block;
-    height: 3vw;
-    margin: 0 5px 0 0;
+    height: 5vw;
+    margin: 0 0 5vh 0;
     vertical-align: middle;
-    width: 3vw;
+    width: 5vw;
 }
 
 footer {

@@ -1,6 +1,6 @@
 let time = document.getElementById('time');
 
-const getSydOffset = (date) => {
+const getSydOffset = date => {
     const stdTimezoneOffset = () => {
         let jan = new Date(0, 1)
         let jul = new Date(6, 1)
@@ -13,15 +13,12 @@ const getSydOffset = (date) => {
 
 time.style = 'visibility: visible;';
 
-let offSet = 10;
-let offSetStr = 'AEST (UTC + 10)';
+let currentDate = new Date();
 
-if (getSydOffset(new Date(Date.now())) === 11) {
-    offSet++;
-    offSetStr = 'AEDT (UTC +11)';
-}
+let offSet = getSydOffset(currentDate);
+let offSetStr = 'AEST, UTC + 10';
+if (offSet === 11) offSetStr = 'AEDT, UTC +11';
 
-time.textContent = new Date(new Date().getTime() + offSet * 3600 * 1000).toUTCString().replace(/GMT$/, offSetStr);
-setInterval(() => {
-    time.textContent = new Date(new Date().getTime() + offSet * 3600 * 1000).toUTCString().replace(/GMT$/, offSetStr);
-}, 1000)
+let currentTime = new Date(new Date(currentDate.getTime() + offSet * 3600 * 1000).toUTCString());
+
+time.textContent = `it's ${new Intl.DateTimeFormat('en-AU', { timeStyle: 'short', hour12: false, timeZone: 'Etc/UTC' }).format(currentTime)} on ${new Intl.DateTimeFormat('en-AU', { month: 'long' }).format(currentTime).toLocaleLowerCase()} ${currentTime.getUTCDate()} for me (${offSetStr})`
