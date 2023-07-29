@@ -1,13 +1,8 @@
 let time = document.getElementById('time');
 
+// this is not entirely accurate, as daylight saving starts on the first sunday of october/april, not the first day
 const getSydOffset = date => {
-    const stdTimezoneOffset = () => {
-        let jan = new Date(0, 1)
-        let jul = new Date(6, 1)
-        return Math.max(jan.getTimezoneOffset(), jul.getTimezoneOffset())
-    }
-
-    if (date.getTimezoneOffset() < stdTimezoneOffset()) return 11;
+    if ((date.getMonth() >= 9) && (date.getMonth() <= 3)) return 11;
     else return 10;
 }
 
