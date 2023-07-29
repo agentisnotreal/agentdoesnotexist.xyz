@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 @import url("https://use.typekit.net/vir8ikq.css");
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: black;
@@ -19,6 +20,7 @@ body {
 .main {
     display: inline-block;
 }
+
 h1 {
     font-size: 8vw;
     vertical-align: middle;
@@ -40,22 +42,29 @@ noscript.page-title {
     animation: blink-animation 1s steps(5, start) infinite;
 }
 
+p#tagline {
+    color: rgba(0, 0, 0, 0);
+    animation: fade-in 2s forwards;
+}
+
 p {
     padding: 0;
     margin: 0 0 1vh 0;
-    font-size: 1.5vw;
-    min-height: 4vw;
+    font-size: 2vw;
 }
 
 p#time {
-    font-size: 1vw;
+    color: rgba(0, 0, 0, 0);
+    animation: fade-in 4s forwards;
+    font-size: 1.3vw;
     margin: 0;
     min-height: 0;
     visibility: hidden;
 }
 
 p#splatoon-title-disclaimer {
-    display: none;
+    display: block;
+    color: rgba(0, 0, 0, 0);
     margin: 0;
     min-height: 0;
 }
@@ -64,20 +73,11 @@ p#secret {
     font-family: Arial, Helvetica, sans-serif;
     visibility: hidden;
     font-size: 0.5vw;
-}
-
-p.divider {
-    display: inline-block;
-    margin: 0 1vw;
-    font-size: 3vw;
-    vertical-align: middle;
-    font-family: input-mono-condensed, monospace;
-    font-weight: 200;
-    font-style: normal;
+    float: right;
 }
 
 a {
-    color: slategrey;
+    color: rgb(39, 62, 88);
     text-decoration: none;
     font-size: 1.5vh;
 }
@@ -87,14 +87,16 @@ a {
     padding-right: 5vw;
     text-align: right;
     float: right;
+    width: 6vw;
+    height: 12vh;
 }
 
 .icon {
     display: inline-block;
-    height: 5vw;
+    height: 100%;
     margin: 0 0 5vh 0;
     vertical-align: middle;
-    width: 5vw;
+    width: 100%;
 }
 
 footer {
@@ -103,6 +105,12 @@ footer {
 
 footer p {
     font-size: 1.5vh;
+}
+
+@keyframes fade-in {
+    to {
+        color: rgba(0, 0, 0, 1);
+    }
 }
 
 @keyframes blink-animation {
@@ -115,9 +123,11 @@ footer p {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
