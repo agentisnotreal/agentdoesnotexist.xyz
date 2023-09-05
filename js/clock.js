@@ -1,19 +1,19 @@
+// time is hidden by default so that a broken clock isn't visible for people with js disabled
 let time = document.getElementById('time');
-
-// this is not entirely accurate, as daylight saving starts on the first sunday of october/april, not the first day
-const getSydOffset = date => {
-    if ((date.getMonth() >= 9) && (date.getMonth() <= 3)) return 11;
-    else return 10;
-}
-
 time.style = 'visibility: visible;';
+
+const format = (o, t) => new Intl.DateTimeFormat('en-AU', o).format(t)
 
 let currentDate = new Date();
 
-let offSet = getSydOffset(currentDate);
-let offSetStr = 'AEST, UTC + 10';
-if (offSet === 11) offSetStr = 'AEDT, UTC +11';
+// this is not entirely accurate, as daylight saving starts on the first sunday of october/april, not the first day
+let sydOffset = (currentDate.getMonth() >= 9) && (currentDate.getMonth() <= 3) ? 11 : 10
+let sydOffsetStr = sydOffset == 10 ? 'AEST, UTC + 10' : 'AEDT, UTC +11';
 
-let currentTime = new Date(new Date(currentDate.getTime() + offSet * 3600 * 1000).toUTCString());
+// for UTC+10, getTimezoneOffset() returns -600 (mins)
+let userOffset = currentDate.getTimezoneOffset() / -60
 
-time.textContent = `it's ${new Intl.DateTimeFormat('en-AU', { timeStyle: 'short', hour12: false, timeZone: 'Etc/UTC' }).format(currentTime)} on ${new Intl.DateTimeFormat('en-AU', { month: 'long' }).format(currentTime).toLocaleLowerCase()} ${currentTime.getUTCDate()} for me (${offSetStr})`
+let utcTime = new Date(currentDate.getTime() - (userOffset * 3600000))
+let sydTime = new Date(utcTime.getTime() + (sydOffset * 3600000))
+
+time.textContent = `it's ${format({ timeStyle: 'short', hour12: false}, sydTime)} on ${format({ weekday: 'long', month: 'long', day: 'numeric'}, sydTime).toLocaleLowerCase()} for me (${sydOffsetStr})`
