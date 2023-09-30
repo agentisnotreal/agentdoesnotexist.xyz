@@ -7,7 +7,7 @@ const format = (o, t) => new Intl.DateTimeFormat('en-AU', o).format(t)
 let currentDate = new Date();
 
 // this is not entirely accurate, as daylight saving starts on the first sunday of october/april, not the first day
-let sydOffset = (currentDate.getMonth() >= 9) && (currentDate.getMonth() <= 3) ? 11 : 10
+let sydOffset = (currentDate.getMonth() >= 9) || (currentDate.getMonth() <= 3) ? 11 : 10
 let sydOffsetStr = sydOffset == 10 ? 'AEST, UTC + 10' : 'AEDT, UTC +11';
 
 // for UTC+10, getTimezoneOffset() returns -600 (mins)
