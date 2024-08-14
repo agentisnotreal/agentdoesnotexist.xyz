@@ -1,47 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="sometimes a programmer" />
+        <meta
+            name="keywords"
+            content="agentisnotreal, agentdoesnotexist, Agent113YT, Minecritters113"
+        />
+        <meta
+            content="#fffd87"
+            data-react-helmet="true"
+            property="theme-color"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" type="image/png" href="/svg/icon.png" />
+        <title>agentisnotreal</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="sometimes a programmer">
-    <meta name="keywords" content="agentisnotreal, agentdoesnotexist, Agent113YT, Minecritters113">
-    <meta content="#fffd87" data-react-helmet="true" property="theme-color">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/svg" href="./svg/agentisnotreal.svg">
-    <title>agentisnotreal</title>
+        <script type="module" src="./js/splatoontitlegen.js"></script>
+        <script type="module" src="./js/clock.js"></script>
+        <script type="module" src="./js/secret.js"></script>
+        <script src="./js/typewriter.js" defer></script>
 
-    <script type="module" src="./js/splatoontitlegen.js"></script>
-    <script type="module" src="./js/clock.js"></script>
-    <script type="module" src="./js/secret.js"></script>
-    <script src="./js/typewriter.js" defer></script>
-</head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Montserrat&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-<body>
-    <div class="wrapper">
-        <div class="main">
-            <h1><span id="page-title"></span><noscript class="page-title">agentisnotreal</noscript></h1>
+    <body>
+        <div class="wrapper">
+            <div class="main">
+                <h1>
+                    <span id="page-title"></span
+                    ><noscript class="page-title">agentisnotreal</noscript>
+                </h1>
 
-            <p id="tagline"><noscript>sometimes a programmer</noscript></p>
+                <p id="tagline"><noscript>sometimes a programmer</noscript></p>
 
-            <p id="time">it's 20:29 on monday, october 27 for me (AEST, UTC +10)</p>
+                <p id="time">
+                    it's 20:29 on monday, october 27 for me (AEST, UTC +10)
+                </p>
+            </div>
+            <div class="social-media-icons">
+                <a href="https://twitter.com/agentisnotreal"
+                    ><img
+                        class="icon"
+                        src="svg/twitter.svg"
+                        alt="Twitter: @agentisnotreal"
+                /></a>
+                <a href="https://github.com/agentisnotreal"
+                    ><img
+                        class="icon"
+                        src="svg/github.svg"
+                        alt="GitHub: agentisnotreal"
+                /></a>
+            </div>
         </div>
-        <div class="social-media-icons">
-            <a href="https://twitter.com/agentisnotreal"><img class="icon" src="svg/twitter.svg"
-                    alt="Twitter: @agentisnotreal"></a>
-            <a href="https://github.com/agentisnotreal"><img class="icon" src="svg/github.svg"
-                    alt="GitHub: agentisnotreal"></a>
+
+        <div class="hintCover">
+            <p>↑</p>
         </div>
-    </div>
 
-    <footer>
-        <p id="splatoon-title-disclaimer">*randomly generated splatoon title, does not necessarily describe me</p>
-        <p><a href="https://github.com/agentisnotreal/agentdoesnotexist.xyz">view source</a> | <a
-                href="./surprise">surprise</a></p>
-        <noscript>
-            <p>you have javascript disabled; you're missing nothing important, but it'd look a bit more lively here!</p>
-        </noscript>
-        <p id="secret">↑ ↑ ↓ ↓ ← → ← → B A</p>
-    </footer>
-</body>
-
+        <footer>
+            <p id="splatoon-title-disclaimer">
+                *randomly generated splatoon title, does not necessarily
+                describe me
+            </p>
+            <p>
+                <a
+                    href="https://github.com/agentisnotreal/agentdoesnotexist.xyz"
+                    >view source</a
+                >
+                | <a href="./surprise">surprise</a>
+            </p>
+            <noscript>
+                <p>
+                    you have javascript disabled; you're missing nothing
+                    important, but it'd look a bit more lively here!
+                </p>
+            </noscript>
+            <p id="secret">↑ ↑ ↓ ↓ ← → ← → B A</p>
+        </footer>
+    </body>
 </html>
